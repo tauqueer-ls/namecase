@@ -1,5 +1,5 @@
 {
-  "name": "namecase",
+  "name": "@lawscout/namecase",
   "version": "v1.1.2",
   "description": "Module for fixing capitalization of people's names",
   "keywords": [

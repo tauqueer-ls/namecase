@@ -135,20 +135,20 @@
     // fixes /JJ Abrams/ and /JD Salinger/
     // With some exceptions
       .replace(/\b[bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ]{2}\s/, function (v) { return v.toUpperCase(); } )
-      .replace(/\bMR\s/,            "Mr")
-      .replace(/\bMS\s/,            "Ms")
-      .replace(/\bDR\s/,            "Dr")
-      .replace(/\bST\s/,            "St")
-      .replace(/\bJR\s/,            "Jr")
-      .replace(/\bSR\s/,            "Sr")
-      .replace(/\bLT\s/,            "Lt")
+      .replace(/\bMR\b/g,            "Mr")
+      .replace(/\bMS\b/g,            "Ms")
+      .replace(/\bDR\b/g,            "Dr")
+      .replace(/\bST\b/g,            "St")
+      .replace(/\bJR\b/g,            "Jr")
+      .replace(/\bSR\b/g,            "Sr")
+      .replace(/\bLT\b/g,            "Lt")
 
 
     // lowercase words
       .replace(/\bThe\b/g,          "the")
       .replace(/\bOf\b/g,           "of")
       .replace(/\bAnd\b/g,          "and")
-      .replace(/\bY\s/g,            "y")
+      .replace(/\bY\b/g,            "y")
 
 
     // strip extra spaces
